@@ -1,0 +1,11 @@
+{% block content %}
+<h1>Student Details</h1>
+<link rel="stylesheet" href="/statics/styles.css">
+<table>
+    {%for key,value in studentOrganisationDetails.items()%}
+    <p class="keys">{{key}}</p>
+    <p class="values">{{value}}</p>
+    {%endfor%}
+</table>
+
+{% endblock %}

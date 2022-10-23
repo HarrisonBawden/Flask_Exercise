@@ -1,0 +1,21 @@
+{% block content %}
+<h1>Register</h1>
+<h4>Enter Student Information below</h4>
+<link rel="stylesheet" href="/statics/styles.css">
+<!--Form to request user's name-->
+<form action="/addStudentOrganisation" method="post">
+    <label for="name">Enter name:</label>
+    <input type="text" name="name" id="name">
+    
+    <label for="org">Enter organisation:</label>
+    <select name="org" id="org">
+        <option value="Chess Club">Chess Club</option>
+        <option value="French Fluency">French Fluency</option>
+        <option value="Future Leaders">Future Leaders</option>
+        <option value="Fantasy Football">Fantasy Football</option>
+        <option value="Tennis Club">Tennis Club</option>
+    </select>
+
+    <input type="submit" value="Register" required>
+</form>
+{% endblock %}
